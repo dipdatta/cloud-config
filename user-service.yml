@@ -1,3 +1,2 @@
-client:
-  pseudo:
-    property: Property value loaded from Git
+customProps:
+  comment: This is comment from uswer-service github config repo
