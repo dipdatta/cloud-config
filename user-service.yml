@@ -1,2 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microdb
+    username: postgres
+    password: micro123
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true  
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    com.user: DEBUG        
 customProps:
   comment: This is comment from uswer-service github config repo
