@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/microdb
     username: postgres
-    password: {cipher}c3d90a1dfc2fc69fb4ef963431d279e85fdc0a235aa217d7152cc90da0448252
+    password: micro123
   jpa:
     properties:
       hibernate:
