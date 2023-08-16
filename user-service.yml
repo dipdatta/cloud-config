@@ -20,4 +20,4 @@ logging:
     org.springframework: ERROR
     com.user: DEBUG        
 customprops:
-  comment: This is comment from uswer-service github config repo
+  comment: This is comment from uswer-service github config repo - refreshed
