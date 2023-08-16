@@ -19,5 +19,5 @@ logging:
     root: ERROR
     org.springframework: ERROR
     com.user: DEBUG        
-customProps:
+customprops:
   comment: This is comment from uswer-service github config repo
