@@ -2,6 +2,8 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/microdb
     username: postgres
+    #For some reason in yml file cipher string has to be within '' else config server throws error
+    #This '' is not required for properties file
     password: '{cipher}c3d90a1dfc2fc69fb4ef963431d279e85fdc0a235aa217d7152cc90da0448252'
   jpa:
     properties:
