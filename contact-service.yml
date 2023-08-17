@@ -1,3 +1,36 @@
-client:
-  pseudo:
-    property: Property value loaded from Git (Contact)
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microdb
+    username: postgres
+    #For some reason in yml file cipher string has to be within '' else config server throws error
+    #This '' is not required for properties file
+    password: '{cipher}c3d90a1dfc2fc69fb4ef963431d279e85fdc0a235aa217d7152cc90da0448252'
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: true  
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    com.user: DEBUG        
+customprops:
+  comment: This is comment from contact-service github config repo
