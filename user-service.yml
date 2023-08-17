@@ -10,12 +10,14 @@ spring:
       hibernate:
         default_schema: public
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
     enabled-by-default: true  
+
 logging:
   level:
     root: ERROR
