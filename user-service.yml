@@ -11,6 +11,13 @@ spring:
         default_schema: public
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/
+
 management:
   endpoints:
     web:
