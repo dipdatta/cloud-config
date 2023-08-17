@@ -7,6 +7,19 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8100/eureka/
 
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**
+        - id: contact-service
+          uri: lb://contact-service
+          predicates:
+            - Path=/contact/**
+            
 management:
   endpoints:
     web:
